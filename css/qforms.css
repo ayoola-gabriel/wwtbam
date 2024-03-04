@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../img/bkg.jpg");
+    color:white;
+}
+
+.main-container{
+    width:100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border:1px solid white; */
+    margin:0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top:2rem !important;
+}
+
+header div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:1rem;
+}
+
+header img{
+    height:3rem;
+    width:auto;
+}
+
+header p{
+    font-weight: bolder;
+    text-align:center;
+}
+
+header hr{
+    width:15rem;
+}
+
+header, .form-container, .action-container{
+    background-color: #000000a8;
+    /* border:1px solid rgb(136, 136, 136); */
+    border-radius: 10px;
+    margin:1rem 2rem;
+    padding:1rem;
+    box-shadow: 0px 0px 7px 2px #53aeeb5d;
+}
+
+.questions-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.questions-container input[type="number"]{
+    width:3rem;
+}
+
+label{
+    font-size: small;
+    font-weight:bold;
+}
+
+#clear-inputs{
+    float:right;
+    padding:0.2rem;
+    border-radius: 2px;
+    border:none;
+    outline:none;
+    transition:0.5s ease-in-out;
+}
+
+#clear-inputs:hover{
+    background-color: antiquewhite;
+}
+
+textarea{
+    height: 5rem;
+    margin: 0.7rem 0px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+input {
+    padding:6px;
+    margin: 5px 0px;
+    outline: 0px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+input[type="radio"]{
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.option-container{
+    /* width: 90%; */
+    display:flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    /* border: 1px solid red; */
+}
+
+.option-container label{
+    font-weight:normal !important;
+}
+
+.option{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin:5px 0px;
+}
+
+.option input[type="text"]{ 
+    width:55%;
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+
+.option input[type="radio"]{ 
+    width:15px;
+    height: 15px;
+}
+
+.action-container{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+}
+
+.action-container div{
+    display: flex;
+    align-items: center;
+}
+
+.action-container input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right:0.5rem;
+}
+
+.action-container button{
+    padding:0.5rem;
+    margin-left:0.5rem;
+    width:4rem;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+}
+
+.action-container button:hover{
+ background-color: antiquewhite;
+}

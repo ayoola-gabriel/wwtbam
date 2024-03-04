@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@font-face {
+  font-family: 'digital-clock-font';
+  src: url('../fonts/digital-7\ \(mono\).ttf');
+}
+
+.header{
+  width: 95%;
+}
+
+.countdown{
+  transition: 1s ease-in;
+  position:absolute;
+  width:12.5rem;
+  top: -80px;
+  left:calc((100vw/2) + 12vw);
+}
+
+.countdown>p{
+  font-family:'digital-clock-font', sans-serif;
+  font-size: 5rem;
+  color:aliceblue;
+  height:75px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius:10px;
+  background-color: #ffffffd7;
+}
+
+.logo > img {
+  transition: 1s ease-in;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  /* width: 15vw; */
+  /* margin-left:12vw; */
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.questions {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: transparent;
+  padding: 20px 20px 0px 20px;
+  gap: 0px;
+  /* width:300px; */
+  max-width: 95vw;
+  margin: 0px auto 0px auto;
+}
+
+.options, .main {
+  color: white;
+  border: 2px solid white;
+  background-color: #000000bf;
+  padding: 5px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* width:615px; */
+  height:9rem;
+}
+
+.options {
+  max-width: 100%;
+  width:45vw;
+}
+
+.options > p,
+.main > p {
+  /* margin: 0px 10px; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 55px;
+}
+
+.font--{
+  font-size:50px !important;
+}
+
+.font---{
+  font-size:40px !important;
+}
+
+.main{
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .logo > img {
+    width: 30vw;
+  }
+  .options > p,
+  .main > p {
+    margin: 0px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .questions {
+    margin-top: 70px;
+  }
+
+  .options, .main{
+    height: 4.5rem;
+  }
+
+  .options{
+    width:18rem;
+    
+  }
+
+  .font--{
+    font-size:1.3rem !important;
+  }
+
+  .font---{
+    font-size:1.1rem !important;
+  }
+}
+
+.main {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

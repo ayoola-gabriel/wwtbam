@@ -1,0 +1,36 @@
+.logo{
+    /* border: 2px solid white; */
+    width:390px;
+    margin: 0px auto;
+    transition: translate 3s;
+    translate: 0px calc(100vh/2 - 195px)
+    
+}
+
+.logo>img{
+    margin:0px auto;
+    transition: width 8s linear;
+    animation: zoom 3s, spin 5s infinite;
+    }
+
+@keyframes spin {
+  50% {
+    transform: rotateY(360deg);
+}
+}
+
+@keyframes zoom{
+from {width:0%;}
+to {width:100%;}
+}
+
+@keyframes translate {
+    to{
+        translate:0px calc(100vw/10)
+    }
+}
+
+.main-audio{
+    display:none;
+}
+
